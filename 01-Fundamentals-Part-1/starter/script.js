@@ -1,10 +1,17 @@
-let js = 'amazing';
-console.log(40 + 8 + 23 - 10);
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 95;
+const johnHeight = 1.88;
 
-let country = 'USA';
-let continent = 'NA';
-let population = 320000000;
+function calculateBMI(m, h) {
+    let bmi = m / h ** 2
+    return bmi.toFixed(2)
+}
 
-console.log(country);
-console.log(continent);
-console.log(population)
+const markBMI = calculateBMI(markMass, markHeight);
+const johnBMI = calculateBMI(johnMass, johnHeight);
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(`Mark weighs ${markMass} kg and is ${markHeight} m tall. His BMI is ${markBMI}.`)
+console.log(`John weighs ${johnMass} kg and is ${johnHeight} m tall. His BMI is ${johnBMI}.`)
