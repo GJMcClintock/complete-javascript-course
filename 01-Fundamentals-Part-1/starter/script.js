@@ -1,17 +1,5 @@
-const markMass = 78;
-const markHeight = 1.69;
-const johnMass = 95;
-const johnHeight = 1.88;
+const bill = 430
 
-function calculateBMI(m, h) {
-    let bmi = m / h ** 2
-    return bmi.toFixed(2)
-}
+const tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
 
-const markBMI = calculateBMI(markMass, markHeight);
-const johnBMI = calculateBMI(johnMass, johnHeight);
-
-const markHigherBMI = markBMI > johnBMI;
-
-console.log(`Mark weighs ${markMass} kg and is ${markHeight} m tall. His BMI is ${markBMI}.`)
-console.log(`John weighs ${johnMass} kg and is ${johnHeight} m tall. His BMI is ${johnBMI}.`)
+console.log (`The bill was ${bill}, the tip was ${tip}, and the total ${bill + tip}.`)
