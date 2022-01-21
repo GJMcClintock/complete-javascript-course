@@ -29,3 +29,4 @@ function calcAvg(arr) {
 }
 
 console.log(calcAvg(totals))
+
